@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="importmap">
+    {
+      "imports": {
+        "@modules/": "./modules/",
+        "react": "https://unpkg.com/react@18.2.0/umd/react.development.js",
+        "react-dom": "https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"
+      }
+    }
+  </script>
+  <script type="module">
+    // import { name } from "@modules/button.mjs";
+    // import * as React from "react";
+    import * as ReactDOM from 'https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js'
+
+    console.log({ name });
+    console.log(ReactDOM);
+
+
+    // ReactDOM.renderRoot(document.getElementById('root'))
+
+    if (HTMLScriptElement.supports?.("importmap")) {
+      console.log("Browser supports import maps.");
+    }
+
+
+  </script>
+</head>
+
+<body>
+  <a href="/another.html">another</a>
+  <div id="root">
+
+  </div>
+</body>
+
+</html>
